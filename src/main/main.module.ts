@@ -49,10 +49,9 @@ import { HeaderComponent } from './header.component';
 import { TitleComponent } from './title.component';
 import { AnpiReportComponent } from '../anpi/anpi.report.component';
 import { AnpiReportPrecautionsComponent } from '../anpi/anpi.report.precautions.component';
-
+import { UserService } from './user.service';
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, MatIconModule, A11yModule,
-    ClipboardModule,
+  imports:      [ BrowserModule, FormsModule, MatIconModule, A11yModule, ClipboardModule,
     CdkStepperModule,
     CdkTableModule,
     CdkTreeModule,
@@ -101,6 +100,7 @@ import { AnpiReportPrecautionsComponent } from '../anpi/anpi.report.precautions.
     AnpiReportPrecautionsComponent,
 
   ],
-  bootstrap:    [ MainComponent ]
+  providers: [ UserService ],
+  bootstrap: [ MainComponent ]
 })
 export class MainModule { }
