@@ -1,4 +1,5 @@
-import { Component, VERSION } from '@angular/core';
+import { Component } from '@angular/core';
+import { User } from './user';
 
 @Component({
   selector: 'main',
@@ -6,5 +7,6 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './main.component.css' ]
 })
 export class MainComponent  {
-  name = 'Angular ' + VERSION.major;
+  name: string;
+  id: string;
 }

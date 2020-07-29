@@ -1,0 +1,62 @@
+section {
+  display: table;
+}
+.caution {
+  color: red;
+}
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+/* 外部リンクボタン
+===================================*/
+.entry-content .link_btn{
+   text-align: center;
+   padding: 1.6em;
+}
+.entry-content .link_btn a{
+   color:#499eda;
+   text-decoration: none;
+   padding:20px;
+   border-radius:3px;
+   border: 1px solid #499eda;
+   -webkit-transition: all 0.7s ease;
+   -moz-transition: all 0.7s ease;
+   -o-transition: all 0.7s ease;
+   transition: all  0.7s ease;
+}
+.entry-content .link_btn a:hover{
+   color:#fff;
+   background-color:#499eda;
+   text-decoration: none;
+   padding:20px;
+   border: 1px solid #499eda;
+}
+.entry-content .link_btn a::after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f08e";
+}
